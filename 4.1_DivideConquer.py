@@ -36,16 +36,8 @@ print(num_elements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 def find_max(arr):
     if len(arr) == 2:
-        if arr[0] > arr[1]:
-            return arr[0]
-        else:
-            return arr[1]
+        return arr[0] if arr[0] > arr[1] else arr[1]
     else:
-        if arr[0] > find_max(arr[1:]):
-            return arr[0]
-        else:
-            return find_max(arr[1:])
-
-print(find_max([1, 2, 3, 4, 5, 6, 7, 8, 90, 10]))
+        return arr[0] if arr[0] > find_max(arr[1:]) else find_max(arr[1:])
 
 print(find_max([1, 2, 3, 4, 5, 6, 7, 8, 90, 10]))
