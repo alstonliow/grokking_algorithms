@@ -17,7 +17,6 @@ for word in words:
 
 for i in range(10):
     print('-', end=' ')
-    return ' '
 
 
 #hash in python
