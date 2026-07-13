@@ -24,5 +24,6 @@ while states_needed:
 
     states_needed -= states_covered
     final_stations.add(best_stations)
+    del stations[best_stations] #newline 
 
 print(final_stations)
